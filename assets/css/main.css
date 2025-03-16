@@ -1,0 +1,92 @@
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+  background-color: #f5f8fd;
+}
+
+a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* 헤더 */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  padding: 0 15px;
+  background: #040b14;
+  overflow-y: auto;
+}
+
+.profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #2c2f3f;
+  border-radius: 50%; /* 이미지를 원형으로 만듭니다 */
+}
+
+.profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.social-links {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+/* 메인 콘텐츠 */
+#main {
+  margin-left: 300px;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+/* 반응형 */
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  
+  #main {
+    margin-left: 0;
+  }
+}
