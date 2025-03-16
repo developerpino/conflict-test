@@ -4,6 +4,7 @@
 
 ## 초기 로컬 브런치 세팅
 
+```
 git fetch --all
 
 for branch in $(git branch -r | grep -v '\->'); do
@@ -11,6 +12,7 @@ for branch in $(git branch -r | grep -v '\->'); do
 done
 
 git branch
+```
 
 ## 작업 흐름
 
