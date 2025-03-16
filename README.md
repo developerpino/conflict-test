@@ -2,6 +2,16 @@
 
 이 프로젝트는 각 기능(feature) 브랜치에서 작업한 내용을 `main` 브랜치로 병합하여 최종본을 완성하는 과정을 다룹니다. 또한, GitHub Pages를 활용하여 결과물을 웹 페이지로 배포합니다.
 
+## 초기 로컬 브런치 세팅
+
+git fetch --all
+
+for branch in $(git branch -r | grep -v '\->'); do
+  git branch --track ${branch#origin/} $branch
+done
+
+git branch
+
 ## 작업 흐름
 
 1. **각 기능 브랜치 확인**:
